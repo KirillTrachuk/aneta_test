@@ -1,0 +1,62 @@
+header
+	display: flex
+	position: fixed
+	z-index: 15
+	width: 100%
+	height: gem(68)
+	background: #FCFEFF
+	box-shadow: gem(0) gem(1) gem(20) rgba(18, 187, 240, 0.1)
+	// box-shadow: 0px 1px 20px rgba(18, 187, 240, 0.1) появится при скролле
+	align-items: center
+	justify-content: space-between
+
+.logo
+	margin-left: gem(60)
+	img
+        width: gem(148)
+        height: gem(36)
+
+.nav-menu
+	display: flex
+	align-items: center
+	.mini_line
+		position: relative
+		width: gem(1)
+		height: gem(8)
+		background-color: #A4E5F9
+		display: flex
+		top: gem(1)
+		right: gem(215)
+	a
+		transition: .3s linear
+		margin: 0 gem(25) 0 gem(25)
+		&:nth-child(7)
+			margin: 0 0 0 gem(60)
+		&:nth-child(8)
+			padding: gem(10) gem(24)
+			border: gem(1) solid #A4E5F9
+			border-radius: gem(8)
+			&:hover
+				background: #A4E5F9
+				color: #ffffff
+		&:hover
+			color: #12BBF0
+		&.active
+			color: #12BBF0
+
+@media only screen and (max-width : 1024px)
+	.nav-menu
+		display: none
+@media only screen and (max-width : 375px)
+	header
+		.logo
+			margin-left: gem(16)
+
+				// content: ""	
+            	// position: absolute
+            	// width: gem(1)
+            	// height: gem(8)
+            	// background-color: #A4E5F9
+            	// margin: 0 auto
+            	// display: block
+            	// top: gem(31)

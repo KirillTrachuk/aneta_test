@@ -1,0 +1,103 @@
+.coming_soon
+    .join_as
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        align-content: center
+        a
+            img
+                width: gem(181)
+                height: gem(44)
+        .soon
+            padding: gem(20) gem(54) gem(28) gem(54)
+            background: linear-gradient(180deg, #17ECDF 0%, #0B8E86 100%)
+            color: #ffffff
+            border-radius: gem(73)
+            box-shadow: gem(0) gem(10) gem(22) #D2F6F4
+            margin-top: gem(50)
+        p
+            text-align: center
+            width: gem(400)
+    .join_as_img
+        margin-top: gem(50)
+        img
+            width: gem(283)
+            height: gem(257)
+    .forma_soon
+        .forma_aneta_soon
+            width: gem(366)
+            height: gem(56)
+            border-radius: gem(12)
+            border: gem(1) solid #BBB6C5
+            outline: none
+            &:focus
+                border: gem(1) solid #BBB6C5
+                ~ span
+                    top: gem(725)
+                    background: #ffffff
+                    color: #10C9BE
+                    font-size: gem(10)
+                    line-height: gem(15)
+                    padding: 0 gem(3)
+        span
+            color:#BBB6C5
+            position: absolute
+            left: gem(330)
+            top: gem(750)
+            transition: all 0.3s ease
+            z-index: 5
+        .sign_up
+            padding: gem(20) gem(83) 
+            border-radius: gem(12)
+            background: #12BBF0
+            color: #ffffff
+            border: none
+            transition: .3s ease
+            &:hover
+                box-shadow: gem(0) gem(4) gem(20) rgba(16, 188, 244, 0.4)
+    .link1
+        margin-top: gem(50)
+
+@media only screen and (max-width : 1024px)
+    .coming_soon
+        .join_as
+            .soon
+                margin-top: 0
+        .join_as_img
+            margin-top: gem(30)
+        .link1
+            margin-top: gem(30)
+        .forma_soon
+            .forma_aneta_soon
+                &:focus
+                    ~span
+                        top: gem(637)
+            span
+                left: gem(60)
+                top: gem(660)
+
+@media only screen and (max-width : 375px)
+    .coming_soon
+        .join_as
+            p
+                width: gem(291)
+        .join_as_img
+            display: flex
+            flex-direction: row
+            img
+                width: gem(163)
+                height: gem(148)
+        .forma_soon
+            margin-left: gem(30)
+            .forma_aneta_soon
+                width: gem(279)
+                &:focus
+                    ~span
+                        top: gem(526)
+            .sign_up
+                padding: gem(19) gem(114)
+            span
+                left: gem(60)
+                top: gem(550)
+
