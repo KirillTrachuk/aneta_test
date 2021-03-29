@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -476,8 +476,8 @@
                             <p class="desc-1">*Up to 5 scholars.</p>
                         </div>
                     </div>
-                    <form class="bg_form">
-                        <input class="flex forma_aneta" type="text">
+                    <form class="bg_form" method="post" action="send.php">
+                        <input class="flex forma_aneta" type="text" name="email">
                         <span class="button1">Your email</span>
                         <button class="button1 forma_button">
                             Sign Up
@@ -614,17 +614,6 @@
     </main>
     <!-- End here -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/jquery.malihu.PageScroll2id.js"></script>
-    <script>
-        (function($){
-            $(window).on("load",function(){
-                $('.nav-menu a').mPageScroll2id();
-                $('.button_sing_up').mPageScroll2id();
-                $('.learn_more').mPageScroll2id();
-            });
-        })(jQuery);
-    </script>
     <script src="js/scripts.min.js"></script>
     <!-- include additional scripts here AFTER app scripts will run -->
 </body>

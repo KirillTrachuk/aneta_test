@@ -47,8 +47,8 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery-3.5.1.min.js',
 		'app/js/wow.js',
-		'app/js/common.js',
-		'app/js/jquery.malihu.PageScroll2id.min.js' // Always at the end
+		'app/js/jquery.malihu.PageScroll2id.js',
+		'app/js/common.js' // Always at the end
 		], { allowEmpty: true })
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Mifify js (opt.)
