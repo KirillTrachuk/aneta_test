@@ -930,53 +930,6 @@ main
 
 .pricing
     background: #F5FDFF
-    .bg_form
-        background: url('../images/Bg.png') center center no-repeat
-        width: gem(685)
-        height: gem(401)
-        position: absolute
-        top: gem(141)
-        left: gem(40)
-        z-index: 5
-        background-size: cover
-        .forma_button
-            padding: gem(18) gem(174)
-            background: #12BBF0
-            border: none
-            border-radius: gem(12)
-            margin: 0 0 0 gem(140)
-        input
-            width: gem(398)
-            height: gem(56)
-            border-radius: gem(12)
-            border: gem(1) solid #E8E7EC
-            display: inline-block
-            opacity: 0.9
-            margin: gem(90) 0 0 gem(140)
-            outline: none
-            z-index: 5
-            &:focus
-                border: gem(1) solid #BBB6C5
-                ~ span
-                    top: gem(84)
-                    background: #ffffff
-                    color: #10C9BE
-                    font-size: gem(10)
-                    line-height: gem(15)
-                    padding: 0 gem(3)
-            &:hover
-                border: gem(1) solid #BBB6C5
-                opacity: 1
-            .mistake
-                border-color: red
-        .no_credit
-            margin: gem(8) 0 0 gem(270)
-        span
-            color:#BBB6C5
-            position: absolute
-            left: gem(180)
-            top: gem(110)
-            transition: all 0.3s ease
     .switch_button
         background: #ffffff
         width: gem(249)
@@ -995,33 +948,78 @@ main
         border: none
         background: #ffffff
         padding: gem(18) gem(32)
-        border-radius: gem(12)
+        border-radius: gem(14)
         border: none
         &.active
             background: #12BBF0
             padding: gem(18) gem(32)
-            border-radius: gem(12)
+            border-radius: gem(14)
             border: none
             color: #ffffff
-            
-.pricing_contetnt
-    justify-content: space-between
-    text-align: center
+    .forma_for_family
+        display: flex
+        flex-direction: column
+        text-align: center
+        h3 
+            margin-bottom: gem(8)
+            &:nth-child(2)
+                color: #B144E4
+        .gray_col 
+            margin: gem(400) 0 gem(140) 0
+            color: #8D869E
+.pricing_content
     &-left
-        width: gem(514)
-        margin-top: gem(69)
-        z-index: 2
-        position: relative
-        margin-left: gem(121)
-        p
-            .purple
-                margin-top: gem(8)
-            &:last-child
-                color: #8D869E
-                margin-top: gem(420)
-                margin-bottom: gem(142)
-        .desc-1
-            color: #B144E4
+        margin-left: gem(160)
+        margin-top: gem(50)
+.bg_form
+    background: url('../images/Bg.png') center center no-repeat
+    width: gem(685)
+    height: gem(401)
+    position: absolute
+    top: gem(141)
+    left: gem(40)
+    z-index: 5
+    background-size: cover
+    .forma_button
+        padding: gem(18) gem(174)
+        background: #12BBF0
+        border: none
+        border-radius: gem(12)
+        margin: 0 0 0 0
+    input
+        width: gem(398)
+        height: gem(56)
+        border-radius: gem(12)
+        border: gem(1) solid #E8E7EC
+        display: inline-block
+        opacity: 0.9
+        margin: gem(90) 0 0 0
+        outline: none
+        z-index: 5
+        padding: gem(0) gem(30)
+        &:focus
+            border: gem(1) solid #BBB6C5
+            ~ span
+                top: gem(84)
+                background: #ffffff
+                color: #10C9BE
+                font-size: gem(10)
+                line-height: gem(15)
+                padding: 0 gem(3)
+        &:hover
+            border: gem(1) solid #BBB6C5
+            opacity: 1
+        .mistake
+            border-color: red
+    .no_credit
+        margin: gem(8) 0 0 gem(0)
+    span
+        color:#BBB6C5
+        position: absolute
+        left: gem(180)
+        top: gem(110)
+        transition: all 0.3s ease
+
 .pricing_contetnt-right
     display: flex
     flex-direction: row
@@ -1074,26 +1072,35 @@ main
             color: #6BD5F6
             text-decoration: underline
 
-.for_teacher
-    h3
-        position: relative
-        display: flex
-        left: gem(-400)
-        top: gem(70)
-    .forever
-        color: #B144E4
-        position: relative
-        top: gem(15)
-        left: gem(-300)
+.pricing_content_teacher-left
+    position: relative
+    left: gem(-430)
+    .forma_for_teacher
+        h3
+            margin-bottom: gem(8)
+            margin-top: gem(50)
+            &:nth-child(2)
+                color: #B144E4
+                margin-top: gem(12)
+                text-align: center
+.pricing_content_teacher-right
+    position: relative
+    left: gem(-85)
+    top: gem(200)
+    h3 
+        width: gem(430)
+    a 
+        color: #12BBF0
+        text-decoration: underline
 
-.form_teacher
+.for_teacher
     background: url('../images/Bg.png') center center no-repeat
     width: gem(685)
     height: gem(401)
     position: absolute
     top: gem(141)
-    left: gem(-590)
-    z-index: 1
+    left: gem(-160)
+    z-index: 5
     background-size: cover
     .forma_button
         padding: gem(18) gem(174)
@@ -1110,6 +1117,8 @@ main
         opacity: 0.9
         margin: gem(90) 0 0 gem(140)
         outline: none
+        z-index: 5
+        padding: gem(0) gem(30)
         &:focus
             border: gem(1) solid #BBB6C5
             ~ span
@@ -1124,32 +1133,15 @@ main
             opacity: 1
         .mistake
             border-color: red
-    .no_credit
-        margin: gem(8) 0 0 gem(270)
     span
         color:#BBB6C5
         position: absolute
         left: gem(180)
         top: gem(110)
         transition: all 0.3s ease
-.pricing_content-right_next
-    display: flex
-    flex-direction: column
-    position: absolute
-    right: gem(-224)
-    top: gem(196)
-    h3
-        width: gem(432)
-        margin-bottom: gem(28)
-    a
-        color: #12BBF0
-        text-decoration: underline
-.helpsec
-    display: none
-    opacity: 0
-.helpsec_right
-    display: none
-    opacity: 0
+    p
+        margin-left: gem(260)
+        margin-top: gem(8)
 
 .unite_box
     display: flex
@@ -1166,228 +1158,145 @@ main
             z-index: 15
 
 @media only screen and (max-width : 1024px)
-    .switch_button
-        &-switch
-            h2
-                margin: gem(100) 0 gem(50) 0
-    .pricing_contetnt-left
-        margin-top: gem(476)
-        p
-            &:last-child
-                margin-top: gem(480)
+    .unite_box
+        .slide_parent_teacher
+            display: flex
+            flex-direction: column
     .pricing_contetnt-right
+        display: flex
+        flex-direction: row
+        position: absolute
+        right: gem(-155)
         top: 0
-        right: gem(-21)
         .learn_more
-            display: none
-            opacity: 0
-        .pricing_right_img
-            h3
-                position: absolute
-                top: gem(140)
-                right: gem(30)
-            h4
-                position: absolute
-                top: 0
-                font-size: gem(56)
-                line-height: gem(73)
-                color: #6BD5F6
-                top: gem(180)
-                right: gem(10)
-    .pricing
-        form
-            top: gem(520)
-        &-switch
-            h2
-                margin: gem(100) 0 gem(45) 0
-    .form_teacher
-        top: gem(341)
-    .for_teacher
-        h3
-            width: gem(420)
-            top: gem(270)
-        .forever
-            position: relative
-            top: gem(215)
-            left: gem(-300)
-    .pricing_content-right_next
-        right: gem(335)
-        top: gem(65)
-        h3
-            width: gem(640)
-    .pricing_contetnt
-        &-left
-            width: gem(514)
-            margin-top: gem(459)
-            z-index: 2
-            position: relative
-            margin-left: gem(121)
-            p
-                .purple
-                    margin-top: gem(8)
-                &:last-child
-                    color: #8D869E
-                    margin-top: gem(410)
-                    margin-bottom: gem(142)
-            .desc-1
+            a
+                width: gem(94)
+                display: flex
+                top: gem(220)
+    .bg_form
+        top: gem(547)
+    .forma_for_family
+        h3 
+            width: gem(432)
+            margin-bottom: gem(8)
+            &:nth-child(2)
                 color: #B144E4
-        
+    .pricing_content
+        &-left
+            margin-left: gem(160)
+            margin-top: gem(450)
+    .for_teacher
+        top: gem(141)
+        left: gem(-18)
+        input
+            margin: gem(90) 0 0 0
+        .forma_button
+            margin: gem(90) 0 0 0
+        p 
+            margin: gem(8) 0 0 0
+    .gray_col
+        margin: gem(30)
+    .pricing_content_teacher-right
+        position: relative
+        left: gem(-530)
+        top: gem(-40)
+        text-align: center
+        h3 
+            width: gem(640)
+        a 
+            display: flex
+            margin: gem(28) 0 0 gem(280)
+    .pricing_content_teacher-left
+        text-align: center
+        top: gem(212)
+        left: gem(-530)
+    .pricing
+        .forma_for_family
+            .gray_col 
+                margin: gem(400) 0 gem(100) 0
+                color: #8D869E
+    .pricing-switch 
+        h2 
+            margin: gem(100) 0 gem(56) 0
+
 @media only screen and (max-width : 375px)
+    .pricing-switch 
+        h2 
+            margin: gem(50) 0 gem(22) 0
     .pricing_contetnt-right
-        right: gem(590)
-        top: gem(40)
+        right: gem(-25)
+        top: gem(36)
+        .learn_more
+            top: gem(-25)
+            right: gem(93)
         .pricing_left_img
             width: gem(163)
             height: gem(176)
             margin: 0
             img
-                max-width: unset
                 width: 120%
-            h3
-                position: absolute
-                top: gem(40)
-                left: gem(45)
-            h4
-                position: absolute
-                top: 0
+            h3 
+                top: gem(55)
+                left: gem(42)
+            h4 
                 font-size: gem(33)
                 line-height: gem(43)
-                color: #6BD5F6
-                top: gem(90)
-                left: gem(50)
+                top: gem(95)
+                left: gem(44)
         .pricing_right_img
             width: gem(163)
             height: gem(176)
-            margin: 0 
+            margin: 0
             img
-                max-width: unset
                 width: 120%
-            h3
-                position: absolute
-                top: gem(40)
-                right: gem(15)
-            h4
-                position: absolute
-                top: 0
+            h3 
+                top: gem(55)
+                right: gem(110)
+            h4 
                 font-size: gem(33)
                 line-height: gem(43)
-                color: #6BD5F6
-                top: gem(90)
-                right: gem(10)
-    .pricing_contetnt-left
-        margin-top: gem(276)
-        opacity: 0
-    .helpsec
-        display: flex
-        opacity: 1
-        position: relative
-        top: gem(241)
-        left: gem(47)
-        width: gem(292)
-        flex-direction: column
-        text-align: center
-        a
-            color: #12bbf0
-            text-decoration: underline
-            margin-bottom: gem(50)
-        p
-            color:#B144E4
-            &:last-child
-                color: #8D869E
-                margin-top: gem(350)
-    .pricing
-        form
-            background: url('../images/Bg_mobile.png') center center no-repeat
-            top: gem(390)
-            width: gem(380)
-            height: gem(339)
-            left: 0
-            .forma_button
-                padding: gem(17) gem(114)
-                background: #12BBF0
-                border: none
-                border-radius: gem(12)
-                margin-left: gem(50)
-            input
-                width: gem(279)
-                height: gem(56)
-                margin: 0 0 0 gem(48)
-                outline: none
-                &:focus
-                    border: gem(1) solid #BBB6C5
-                    ~ span
-                        top: gem(43)
-                        background: #ffffff
-                        color: #10C9BE
-                        font-size: gem(10)
-                        line-height: gem(15)
-                        padding: 0 gem(3)
-                &:hover
-                    border: gem(1) solid #BBB6C5
-                    opacity: 1
-                .mistake
-                    border-color: red
-            span
-                color:#BBB6C5
-                position: absolute
-                left: gem(80)
-                top: gem(66)
-                transition: all 0.3s ease
-            .no_credit
-                margin: gem(8) 0 0 gem(120)
-    .pricing_content-right_next
-        text-align: center
-        right: gem(1280)
-        top: gem(65)
-        h3
-            width: gem(343)
-    .helpsec_right
-        display: flex
-        opacity: 1
-        position: relative
-        top: gem(271)
-        left: gem(-877)
-        width: gem(292)
-    .form_teacher
-        top: gem(340)
-        width: gem(380)
-        height: gem(339)
-        left: gem(-930)
+                top: gem(95)
+                right: gem(104)
+    .pricing_content
+        &-left
+            margin-left: gem(-25)
+            margin-top: gem(310)
+    .bg_form
+        top: gem(400)
         background: url('../images/Bg_mobile.png') center center no-repeat
+        width: gem(400)
+        height: gem(376)
+        left: gem(-13)
         .forma_button
-            padding: gem(17) gem(114)
-            background: #12BBF0
-            border: none
-            border-radius: gem(12)
-            margin-left: gem(50)
+            padding: gem(19) gem(114)
+            margin: 0 0 0 0
         input
             width: gem(279)
-            height: gem(56)
-            margin: 0 0 0 gem(48)
-            outline: none
-            &:focus
-                border: gem(1) solid #BBB6C5
-                ~ span
-                    top: gem(43)
-                    background: #ffffff
-                    color: #10C9BE
-                    font-size: gem(10)
-                    line-height: gem(15)
-                    padding: 0 gem(3)
-            &:hover
-                border: gem(1) solid #BBB6C5
-                opacity: 1
-            .mistake
-                border-color: red
         span
-            color:#BBB6C5
-            position: absolute
-            left: gem(80)
-            top: gem(66)
-            transition: all 0.3s ease
-        .no_credit
-            margin: gem(8) 0 0 gem(120)  
+            left: gem(90)
+    .pricing_content_teacher-right
+        left: gem(-390)
+        h3 
+            width: gem(343)
+        a 
+            margin: gem(30) 0 0 gem(130)
+    .pricing_content_teacher-left
+        top: gem(250)
+        left: gem(-390)
+    .for_teacher
+        background: url('../images/Bg_mobile.png') center center no-repeat
+        width: gem(400)
+        height: gem(376)
+        left: gem(-30)
+        .forma_button
+            padding: gem(19) gem(114)
+            margin: 0 0 0 0
+        input
+            width: gem(279)
+        span
+            left: gem(90)
         
+
 .help_teacher
     .column
         align-items: center
@@ -1539,6 +1448,9 @@ main
         position: relative
         top: gem(194)
         right: gem(-176)
+        img 
+            width: gem(47)
+            height: gem(27)
     p
         width: gem(430)
 
@@ -1885,7 +1797,7 @@ footer
     height: 100vh
     width: 100%
     transition: .3s ease
-    z-index: 3
+    z-index: 25
     &.active
         left: 0
 
