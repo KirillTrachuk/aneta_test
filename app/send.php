@@ -7,7 +7,7 @@
 	$message = "<p>Lead</p>
 	<p><strong>Email:</strong> $email</p>";
 
-	mail( "support@anetaed.com", "Lead from Website",
+	mail( "kirilltrachuk@gmail.com", "Lead from Website",
 	    $message, $headers );
 	header( "Location: /coming_soon.html" );
 ?>

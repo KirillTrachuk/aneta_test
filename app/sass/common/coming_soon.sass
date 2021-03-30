@@ -9,6 +9,7 @@
             img
                 width: gem(181)
                 height: gem(44)
+
         .soon
             padding: gem(20) gem(54) gem(28) gem(54)
             background: linear-gradient(180deg, #17ECDF 0%, #0B8E86 100%)
@@ -31,8 +32,13 @@
             border-radius: gem(12)
             border: gem(1) solid #BBB6C5
             outline: none
-            &:focus
+            opacity: 0.8
+            padding-left: gem(30)
+            &:hover
                 border: gem(1) solid #BBB6C5
+                opacity: 1
+            &:focus
+                border: gem(1) solid #E8E7EC
                 ~ span
                     top: gem(725)
                     background: #ffffff
@@ -58,6 +64,13 @@
                 box-shadow: gem(0) gem(4) gem(20) rgba(16, 188, 244, 0.4)
     .link1
         margin-top: gem(50)
+    .arrow_back
+        width: gem(5)
+        height: gem(10)
+        display: flex
+        position: relative
+        top: gem(-18)
+        left: gem(-35)
 
 @media only screen and (max-width : 1024px)
     .coming_soon
@@ -96,7 +109,7 @@
                     ~span
                         top: gem(526)
             .sign_up
-                padding: gem(19) gem(114)
+                padding: gem(19) gem(117)
             span
                 left: gem(60)
                 top: gem(550)

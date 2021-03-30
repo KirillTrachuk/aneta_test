@@ -161,7 +161,6 @@ main
         margin: gem(163) 0 0 gem(90)
         img
             width: gem(420)
-            height: gem(525)
 .button_sing_up
     padding: gem(17) gem(32)
     background:#12BBF0
@@ -169,8 +168,9 @@ main
     border: none
     transition: .3s ease
     margin-bottom: gem(106)
+    text-align: center
     &:hover
-        box-shadow: 0px gem(1) gem(20) rgba(16, 188, 244, 0.4)
+        box-shadow: gem(0) gem(4) gem(20) rgba(16, 188, 244, 0.4)
 .mobile_img_s1
     display: none
 
@@ -209,7 +209,6 @@ main
             margin: 0 0 0 0
         img
             width: gem(640)
-            height: gem(328)
         .mobile_img_s1
             display: flex
         .desctop_img_s1
@@ -227,8 +226,6 @@ main
             display: none
         &-right
             margin-top: gem(118)
-            img
-                height: gem(388)
         &-left
             .title-h2
                 width: gem(327)
@@ -240,12 +237,16 @@ main
                 display: flex
                 flex-direction: column
             .button_sing_up
-                padding: gem(17) gem(98)
+                text-align: center
+                padding: gem(18) gem(98)
                 margin-bottom: 0
                 margin-top: gem(36)
             .column
                 text-align: center
-                margin: gem(10) 0 0 gem(26)
+                margin: gem(10) 0 0 0
+            p 
+                &:last-child
+                    margin-bottom: gem(8)
             
 .why_aneta
     background: #FCFEFF
@@ -628,12 +629,16 @@ main
             text-align: left
             width: gem(229)
             height: 0
+            opacity: 0
+            transition: .3s ease
+            transition-delay: .1s
     &:hover
         .hidden
             height: gem(142)
             opacity: 1
             p
                 height: auto
+                opacity: 1
         .circle
             width: gem(36)
             height: gem(36)
@@ -660,6 +665,8 @@ main
                     text-align: left
                     width: gem(222)
                     height: gem(52)
+                    opacity: 1
+                    transition-delay: none
             &:nth-child(3)
                 .hidden
                     p
@@ -790,8 +797,9 @@ main
                     border-radius: gem(12)
                     border: none
                     transition: .3s ease
+                    text-align: center
                     &:hover
-                        box-shadow: 0px gem(1) gem(20) rgba(16, 188, 244, 0.4)
+                        box-shadow: gem(0) gem(4) gem(20) rgba(16, 188, 244, 0.4)
             p
                 margin: gem(16) 0 0 gem(155)
         .for_free-left_ask
@@ -807,8 +815,9 @@ main
                     border-radius: gem(12)
                     border: none
                     transition: .3s ease
+                    text-align: center
                     &:hover
-                        box-shadow: 0px gem(1) gem(20) rgba(16, 188, 244, 0.4)
+                        box-shadow: gem(0) gem(4) gem(20) rgba(16, 188, 244, 0.4)
             p
                 margin: gem(16) 0 0 gem(224)
                 &:last-child
@@ -821,8 +830,9 @@ main
                 border-radius: gem(12)
                 border: none
                 transition: .3s ease
+                text-align: center
                 &:hover
-                    box-shadow: 0px gem(1) gem(20) rgba(16, 188, 244, 0.4)
+                    box-shadow: gem(0) gem(4) gem(20) rgba(16, 188, 244, 0.4)
             h2
                 width: gem(513)
                 margin: gem(22) 0 gem(16) gem(66)
@@ -867,7 +877,7 @@ main
             .row_column
                 margin: 0 0 0 gem(16)
                 .button_sing_up
-                    padding: gem(19) gem(114)  gem(19) gem(82)
+                    padding: gem(19) gem(98.5)
             p
                 margin: gem(16) 0 0 0
         .for_free-left_ask
@@ -878,18 +888,18 @@ main
             .row_column
                 margin: 0 0 0 gem(16)
                 .button_sing_up
-                    padding: gem(19) gem(114) gem(19) gem(82)
+                    padding: gem(19) gem(98.5)
             p
                 margin: gem(16) 0 0 0
                 &:last-child
-                    margin: gem(1) 0 0 0
+                    margin: gem(8) 0 0 0
         .for_free-teacher
             text-align: center
             .button_sing_up
-                padding: gem(19) gem(114) gem(19) gem(82)
+                padding: gem(19) gem(98.5)
             h2
                 width: gem(291)
-                margin: gem(32) 0 gem(16) gem(26)
+                margin: gem(10) 0 gem(16) gem(26)
             .help_blok
                 margin: 0 0 gem(16) gem(16)
             p
@@ -898,7 +908,7 @@ main
         .for_free_30days
             text-align: center
             .button_sing_up
-                padding: gem(19) gem(114) gem(19) gem(82)
+                padding: gem(19) gem(98.5)
             h2
                 width: gem(291)
                 margin: gem(32) 0 0 gem(26)
@@ -1017,7 +1027,7 @@ main
         color:#BBB6C5
         position: absolute
         left: gem(180)
-        top: gem(110)
+        top: gem(106)
         transition: all 0.3s ease
 
 .pricing_contetnt-right
@@ -1055,7 +1065,7 @@ main
         h3
             position: absolute
             top: gem(140)
-            right: gem(110)
+            right: gem(120)
         h4
             position: absolute
             top: 0
@@ -1063,7 +1073,7 @@ main
             line-height: gem(73)
             color: #6BD5F6
             top: gem(180)
-            right: gem(90)
+            right: gem(100)
     .learn_more
         position: relative
         top: gem(180)
@@ -1151,7 +1161,7 @@ main
         flex-direction: row
         transform: translateX(gem(100))
         opacity: 0
-        transition: 1s ease
+        transition: .3s ease
         &.active
             transform: translateX(gem(0))
             opacity: 1
@@ -1272,6 +1282,7 @@ main
             margin: 0 0 0 0
         input
             width: gem(279)
+            margin: gem(90) 0 0 gem(10)
         span
             left: gem(90)
     .pricing_content_teacher-right
