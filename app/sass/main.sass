@@ -420,13 +420,15 @@ main
     text-align: center
     width: gem(1087)
     margin: gem(144) 0 gem(16) 0
+    h2
+        margin-bottom: gem(16)
 
 .make_playlist
     .title-h3
-        width: gem(522)
+        width: gem(432)
         margin: gem(172) 0 gem(18) 0
     .desc-1
-        width: gem(498)
+        width: gem(570)
 
 .anetapacks_blue
     position: absolute
@@ -439,10 +441,10 @@ main
     flex-direction: row-reverse
     .use_of_time
         .title-h3
-            width: gem(522)
+            width: gem(480)
             margin: gem(217) 0 gem(18) 0
         .desc-1
-            width: gem(524)
+            width: gem(570)
             margin: 0 0 gem(14) 0
             &:last-child
                 margin-bottom: gem(193)
@@ -484,7 +486,7 @@ main
                     margin-bottom: gem(550)
     .anetapacks_orange
         position: absolute
-        top: gem(1350)
+        top: gem(1250)
         left: 0
         img
             width: gem(670)
@@ -502,7 +504,7 @@ main
         .desc-1
             width: gem(343)
     .anetapacks_blue
-        top: gem(585)
+        top: gem(835)
     .help_parents_right
         .use_of_time
             text-align: center
@@ -515,10 +517,15 @@ main
                 &:last-child
                     margin-bottom: gem(350)
     .anetapacks_orange
-        top: gem(1270)
+        top: gem(1620)
         left: 0
         img
             width: gem(713)
+@media only screen and (max-width : 375px)
+    .anetapacks_blue
+        top: gem(600)
+    .anetapacks_orange
+        top: gem(1270)
     
 .help_teens
     .column
@@ -550,7 +557,7 @@ main
 @media only screen and (max-width : 1024px)
     .help_teens
         .anetapacks_blue_teens
-            top: gem(480)
+            top: gem(500)
             img
                 width: gem(713)
         .anetapacks_orange_teens
@@ -566,11 +573,17 @@ main
                     &:last-child
                         margin-bottom: gem(300)
         .anetapacks_blue_teens
-            top: gem(550)
+            top: gem(700)
         .anetapacks_orange_teens
-            top: gem(1070)
+            top: gem(1300)
             img
                 width: gem(713)
+@media only screen and (max-width : 375px)
+    .help_teens
+        .anetapacks_blue_teens
+            top: gem(550)
+        .anetapacks_orange_teens
+            top: gem(1100)
     
     
 
@@ -758,7 +771,7 @@ main
             p
                 margin: gem(15) 0 0 gem(26)
         .or
-            margin: gem(16) 0 gem(16) gem(160)
+            margin: gem(16) 0 gem(16) gem(135)
             a
                 display: flex
                 margin: 0 0 0 gem(-25)
@@ -792,7 +805,7 @@ main
                 display: block
                 margin: 0 0 0 gem(90)
                 .button_sing_up
-                    padding: gem(19) gem(171)
+                    padding: gem(18) gem(193)
                     background:#12BBF0
                     border-radius: gem(12)
                     border: none
@@ -801,7 +814,7 @@ main
                     &:hover
                         box-shadow: gem(0) gem(4) gem(20) rgba(16, 188, 244, 0.4)
             p
-                margin: gem(16) 0 0 gem(155)
+                margin: gem(16) 0 0 gem(145)
         .for_free-left_ask
             h2
                 width: gem(604)
@@ -810,7 +823,7 @@ main
                 display: block
                 margin: 0 0 0 gem(90)
                 .button_sing_up
-                    padding: gem(19) gem(171)
+                    padding: gem(18) gem(193)
                     background:#12BBF0
                     border-radius: gem(12)
                     border: none
@@ -821,11 +834,11 @@ main
             p
                 margin: gem(16) 0 0 gem(224)
                 &:last-child
-                    margin: gem(16) 0 0 gem(155)
+                    margin: gem(16) 0 0 gem(145)
         .for_free-teacher
             text-align: center
             .button_sing_up
-                padding: gem(19) gem(171)
+                padding: gem(18) gem(193)
                 background:#12BBF0
                 border-radius: gem(12)
                 border: none
@@ -849,7 +862,7 @@ main
         .for_free_30days
             text-align: center
             .button_sing_up
-                padding: gem(19) gem(171)
+                padding: gem(18) gem(193)
             h2
                 width: gem(457)
                 margin: gem(42) 0 0 gem(90)
@@ -859,7 +872,9 @@ main
                 p
                     margin: gem(15) gem(16) 0 0
             .or
-                display: none
+                margin: gem(70) 0 gem(16) gem(300)
+                p
+                    display: none
 
         .for_free-right
             display: none
@@ -884,7 +899,7 @@ main
             text-align: center
             h2
                 width: gem(291)
-                margin: gem(10) 0 0 gem(26)
+                margin: 0 0 0 gem(26)
             .row_column
                 margin: 0 0 0 gem(16)
                 .button_sing_up
@@ -899,7 +914,7 @@ main
                 padding: gem(19) gem(98.5)
             h2
                 width: gem(291)
-                margin: gem(10) 0 gem(16) gem(26)
+                margin: 0 0 gem(16) gem(26)
             .help_blok
                 margin: 0 0 gem(16) gem(16)
             p
@@ -1074,6 +1089,13 @@ main
             color: #6BD5F6
             top: gem(180)
             right: gem(100)
+        p
+            position: absolute
+            top: gem(280)
+            width: gem(232)
+            right: gem(75) 
+            text-align: center
+            color: #B144E4
     .learn_more
         position: relative
         top: gem(180)
@@ -1201,7 +1223,7 @@ main
         input
             margin: gem(90) 0 0 0
         .forma_button
-            margin: gem(90) 0 0 0
+            margin: gem(30) 0 0 0
         p 
             margin: gem(8) 0 0 0
     .gray_col
@@ -1233,8 +1255,15 @@ main
     .pricing-switch 
         h2 
             margin: gem(50) 0 gem(22) 0
+    .forma_for_family
+        h3 
+            width: gem(292)
+    .pricing
+        .forma_for_family
+            .gray_col
+                margin: gem(350) 0 gem(50) 0
     .pricing_contetnt-right
-        right: gem(-25)
+        right: gem(-100)
         top: gem(36)
         .learn_more
             top: gem(-25)
@@ -1247,12 +1276,14 @@ main
                 width: 120%
             h3 
                 top: gem(55)
-                left: gem(42)
+                left: gem(48)
+                font-size: gem(15)
+                line-height: gem(19)
             h4 
                 font-size: gem(33)
                 line-height: gem(43)
                 top: gem(95)
-                left: gem(44)
+                left: gem(50)
         .pricing_right_img
             width: gem(163)
             height: gem(176)
@@ -1261,7 +1292,9 @@ main
                 width: 120%
             h3 
                 top: gem(55)
-                right: gem(110)
+                right: gem(115)
+                font-size: gem(15)
+                line-height: gem(19)
             h4 
                 font-size: gem(33)
                 line-height: gem(43)
@@ -1269,44 +1302,88 @@ main
                 right: gem(104)
     .pricing_content
         &-left
-            margin-left: gem(-25)
+            margin-left: gem(40)
             margin-top: gem(310)
     .bg_form
-        top: gem(400)
+        top: gem(440)
         background: url('../images/Bg_mobile.png') center center no-repeat
         width: gem(400)
         height: gem(376)
         left: gem(-13)
         .forma_button
-            padding: gem(19) gem(114)
+            padding: gem(15) gem(103)
             margin: 0 0 0 0
+            display: flex
+            position: relative
+            top: gem(70)
+            left: gem(72)
         input
-            width: gem(279)
-            margin: gem(90) 0 0 gem(20)
+            width: gem(250)
+            height: gem(50)
+            margin: 0
+            position: relative
+            top: gem(44)
+            &:focus
+                ~ span
+                    top: gem(87)
         span
             left: gem(90)
+            z-index: 5
+            top: gem(110)
+        .no_credit
+            margin: gem(100) 0 0 0
+
     .pricing_content_teacher-right
-        left: gem(-390)
+        left: gem(-315)
+        top: gem(-100)
         h3 
             width: gem(343)
         a 
             margin: gem(30) 0 0 gem(130)
     .pricing_content_teacher-left
         top: gem(250)
-        left: gem(-390)
+        left: gem(-315)
     .for_teacher
         background: url('../images/Bg_mobile.png') center center no-repeat
         width: gem(400)
         height: gem(376)
         left: gem(-30)
         .forma_button
-            padding: gem(19) gem(114)
+            padding: gem(15) gem(103)
             margin: 0 0 0 0
+            display: flex
+            position: relative
+            top: gem(70)
+            left: gem(72)
         input
-            width: gem(279)
-            margin: gem(90) 0 0 gem(20)
+            width: gem(250)
+            height: gem(50)
+            margin: 0
+            position: relative
+            top: gem(44)
+            &:focus
+                ~ span
+                    top: gem(87)
         span
             left: gem(90)
+            z-index: 5
+            top: gem(110)
+        .no_credit
+            margin: gem(100) 0 0 0
+@media only screen and (max-width : 375px)
+    .bg_form
+        top: gem(400)
+    .pricing
+        .forma_for_family
+            .gray_col
+                margin: gem(400) 0 gem(50) 0
+    .pricing_content_teacher-left
+        top: gem(170)
+        left: gem(-315)
+    .for_teacher
+        top: gem(110)
+    
+
         
 
 .help_teacher
@@ -1385,7 +1462,7 @@ main
             &:last-child
                 margin-bottom: gem(552)
     .anetapacks_teacher
-        top: gem(560)
+        top: gem(580)
         img
             width: gem(713)
 
@@ -1404,7 +1481,10 @@ main
             &:last-child
                 margin-bottom: gem(352)
     .anetapacks_teacher
-        top: gem(660)
+        top: gem(820)
+@media only screen and (max-width : 375px)
+    .anetapacks_teacher
+        top: gem(650)
 
 .about_us
     display: flex
@@ -1465,6 +1545,7 @@ main
             height: gem(27)
     p
         width: gem(430)
+        margin-bottom: gem(18)
 
 .afua_text_right
     .name
@@ -1523,7 +1604,7 @@ main
                 margin-bottom: gem(345)
     .anetapacks_about
         position: absolute
-        top: gem(470)
+        top: gem(460)
         right: 0
         img
             width: gem(713)
@@ -1576,7 +1657,7 @@ main
             width: gem(295)
             margin-bottom: gem(14)
         .quotes
-            top: gem(210)
+            top: gem(245)
             right: gem(-100)
     .afua_text_right
         .name
@@ -1584,7 +1665,12 @@ main
             margin: gem(40) 0 gem(50) gem(24)
     .group_about_768
         display: none
-
+@media only screen and (max-width : 375px)
+    .afua_text
+        .quotes
+            top: gem(215)
+    .anetapacks_about
+        top: gem(460)
 footer
     .footer_content
         display: flex
