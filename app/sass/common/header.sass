@@ -36,6 +36,7 @@ header
 			padding: gem(10) gem(24)
 			border: gem(1) solid #A4E5F9
 			border-radius: gem(8)
+			font-size: gem(14)
 			&:hover
 				background: #A4E5F9
 				color: #ffffff
@@ -43,20 +44,29 @@ header
 			color: #12BBF0
 		&.active
 			color: #12BBF0
+.mobile_btn
+	display: none
+	position: absolute
+	top: gem(13)
+	right: gem(80)
+	transition: .3s linear
+	padding: gem(10) gem(24)
+	border: gem(1) solid #A4E5F9
+	border-radius: gem(8)
+	font-size: gem(14)
+	&:hover
+		background: #A4E5F9
+		color: #ffffff
+	
+
 
 @media only screen and (max-width : 1024px)
 	.nav-menu
 		display: none
-@media only screen and (max-width : 375px)
+	.mobile_btn
+		display: flex
+@media only screen and (max-width : 480px)
 	header
 		.logo
 			margin-left: gem(16)
-
-				// content: ""	
-            	// position: absolute
-            	// width: gem(1)
-            	// height: gem(8)
-            	// background-color: #A4E5F9
-            	// margin: 0 auto
-            	// display: block
-            	// top: gem(31)
+	
